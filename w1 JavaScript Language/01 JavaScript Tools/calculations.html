@@ -6,13 +6,14 @@
 <style type="text/css">
 body {margin: 30px;}
 </style> 
+<script src="js/calculations.js"></script>
 </head>
 <body>
 <form>
-1st Number : <input type="text" id="firstNumber" /><br>
-2nd Number: <input type="text" id="secondNumber" /><br>
-<input type="button" onClick="multiplyBy()" Value="Multiply" />
-<input type="button" onClick="divideBy()" Value="Divide" />
+1st Number : <input type="text" min="1" id="firstNumber" /><br>
+2nd Number: <input type="text" min="1" id="secondNumber" /><br>
+<input type="button" onClick="validateMultiply()" Value="Multiply" />
+<input type="button" onClick="validateDivide()" Value="Divide" />
 </form>
 <p>The Result is : <br>
 <span id = "result"></span>
